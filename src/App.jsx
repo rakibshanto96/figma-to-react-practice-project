@@ -1,8 +1,18 @@
+import Courses from "./components/Courses";
+import GetOurApp from "./components/GetOurApp";
+import Header from "./components/Header";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div>
-      <h1>Figma to React</h1>
-    </div>
+    <>
+      <Header />
+      <Testimonials />
+      <Courses />
+      <GetOurApp />
+      <Footer />
+    </>
   );
 }
 
