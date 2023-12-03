@@ -2,42 +2,44 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="wrapper">
-      <nav>
-        <div className="logo">RS</div>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">our Work</a>
-          </li>
-          <li>
-            <a href="#" className="btn dark">
-              Enrol Now
+    <header>
+      <div className="wrapper">
+        <nav>
+          <div className="logo">GD.</div>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Our Work</a>
+            </li>
+            <li>
+              <a href="#" className="btn dark">
+                Enroll Now
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        {/* End of desktop Navigation Menu */}
+
+        <div className="hero-section">
+          <div className="left">
+            <h1>
+              Learn the art of <br /> Game Dev
+            </h1>
+            <p>
+              This is a comprehensive course on Game Development. You will learn
+              everything from generating an idea to publishing your games to
+              different platforms.
+            </p>
+            <a href="#" className="btn light enroll-icon">
+              Enroll Now
             </a>
-          </li>
-        </ul>
-      </nav>
-
-      {/* End of desktop Navigation Menu */}
-
-      <div className="hero-section">
-        <div className="left">
-          <h1>
-            Learn the art of <br /> Game Dev
-          </h1>
-          <p>
-            This is a comprehensive course on Game Development. You will learn
-            everything from generating an idea to publishing your games to
-            different platforms.
-          </p>
-          <a href="#" className="btn light">
-            Enrol Now
-          </a>
+          </div>
           <div className="right">
             <img src="/assets/images/hero-image-1.png" alt="" />
           </div>
@@ -65,7 +67,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
