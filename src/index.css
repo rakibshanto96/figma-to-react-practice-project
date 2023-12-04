@@ -200,3 +200,125 @@ nav ul li a {
   align-items: center;
   gap: 5px;
 }
+
+/* Testimonials Section */
+section {
+  margin-top: 100px;
+}
+
+h2 {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 0;
+}
+
+h2.light {
+  color: #fff;
+}
+
+section p {
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  margin: 12px 0;
+}
+
+.testimonials-section {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.testimonials-section .mobile-btn {
+  display: none;
+}
+
+.testimonials-section .testimonial-card {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.testimonials-section .testimonial-card::before {
+  content: "";
+  width: 28px;
+  position: absolute;
+  height: 40px;
+  background: var(--dark-blue-color);
+  border-radius: 24px 24px 0 0;
+  left: 82px;
+  top: -40px;
+}
+
+.testimonials-section .testimonial-card:last-child::before {
+  content: "";
+  width: 28px;
+  height: calc(100% + 90px);
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  background: var(--dark-blue-color);
+  left: 62px;
+  top: -50px;
+  z-index: -1;
+}
+
+.testimonials-section .testimonial-card .content {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 150%;
+  padding: 24px 32px;
+  border-radius: 24px;
+  background: var(--light-blue-color);
+}
+
+.testimonials-section .testimonial-card:last-child .content {
+  background: var(--orange-color);
+}
+
+.testimonials-section .testimonial-card .info h4 {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 0;
+}
+
+.testimonials-section .testimonial-card .info {
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.testimonials-section .testimonial-card .info p.company {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.testimonials-section .testimonial-card img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 32px;
+  top: 60px;
+}
+
+.testimonials-section .testimonial-card:last-child {
+  transform: translateX(20px);
+}
+
+.testimonials-section .features {
+  margin-bottom: 30px;
+}
