@@ -405,3 +405,113 @@ section p {
   position: absolute;
   right: 0;
 }
+
+/* GetOurApp Section */
+
+.app-section {
+  text-align: center;
+}
+
+.app-section .app-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  gap: 30px;
+}
+
+.app-section .app-btn {
+  display: flex;
+  gap: 14px;
+  min-width: 310px;
+  padding: 20px 31px;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+
+.app-section .app-btn span {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+/* Footer */
+
+footer {
+  background: var(--dark-color);
+  color: #fff;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
+footer h3 {
+  color: var(--orange-color);
+}
+
+footer ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+footer ul li {
+  margin: 13px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .links-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .links-container .social {
+  margin-left: 20px;
+  margin-bottom: 26px;
+}
+
+footer .links-container .social img {
+  margin-right: 28px;
+}
+
+footer form {
+  position: relative;
+  margin-left: 20px;
+}
+
+footer form .submit-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  border-radius: 8px;
+  background: var(--dark-blue-color);
+  padding: 2px 28px;
+  border: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  cursor: pointer;
+}
+
+footer form input {
+  width: 100%;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+footer .copyright {
+  margin-top: 36px;
+}
