@@ -1,32 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Header = () => {
-  const nav = document.querySelector("nav");
-  const mobileNav = document.querySelector("nav.mobile-nav");
-  const menuIcon = document.querySelector(".menu-icon");
-  const closeIcon = document.querySelector(
-    ".mobile-menu-container .close-icon"
-  );
-  const mobileMenuContainer = document.querySelector(".mobile-menu-container");
+  useEffect(() => {
+    const nav = document.querySelector("nav");
+    const mobileNav = document.querySelector("nav.mobile-nav");
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(
+      ".mobile-menu-container .close-icon"
+    );
+    const mobileMenuContainer = document.querySelector(
+      ".mobile-menu-container"
+    );
 
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 60) {
-      nav.classList.add("scrolled");
-      mobileNav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-      mobileNav.classList.remove("scrolled");
-    }
-  });
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 60) {
+        nav.classList.add("scrolled");
+        mobileNav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+        mobileNav.classList.remove("scrolled");
+      }
 
-  menuIcon.addEventListener("click", () => {
-    mobileMenuContainer.classList.add("active");
-  });
+      menuIcon.addEventListener("click", () => {
+        mobileMenuContainer.classList.add("active");
+      });
 
-  closeIcon.addEventListener("click", () => {
-    mobileMenuContainer.classList.remove("active");
-  });
-
+      closeIcon.addEventListener("click", () => {
+        mobileMenuContainer.classList.remove("active");
+      });
+    });
+  }, []);
   return (
     <header>
       <div className="wrapper">
@@ -79,7 +82,7 @@ const Header = () => {
 
             <li>
               <a href="#" className="btn dark">
-                Enrol Now
+                Enroll Now
               </a>
             </li>
           </ul>

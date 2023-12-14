@@ -43,15 +43,15 @@ body {
   background: var(--orange-color);
 }
 
-.btn.enrol-icon::before {
-  content: url("images/enrol-now-icon.svg");
+.btn.enroll-icon::before {
+  content: url("/assets/images/enroll-icon.svg");
   position: absolute;
   top: 50%;
   left: 32px;
   transform: translateY(-50%);
 }
 
-.btn.enrol-icon {
+.btn.enroll-icon {
   padding-left: 60px;
 }
 
@@ -402,7 +402,7 @@ section p {
 }
 
 .courses-section .course-card .duration::before {
-  content: url("images/clock.svg");
+  content: url("/assets/images/clock.svg");
   position: absolute;
   top: 2px;
   left: -6px;
